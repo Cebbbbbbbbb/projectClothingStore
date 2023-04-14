@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*ENCABEZADO*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    z-index: 10;
+    box-shadow: 0px 0px 10px 0px black;
+}
+header.abajo{
+    background: #ffffffd7;
+}
+
+header .logo{
+    margin-left: -195px;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+header ul li a{ 
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 15px;
+    color: #ffd500;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.7s;
+    text-decoration: none;
+    border-bottom: 2px solid #ffd500;
+    padding-bottom: 3px;
+    transition: 0.5s;
+}
+header ul li a:hover {
+    font-size: 18px;
+    color: #ff0800;
+    border-bottom: 2px solid #ff0800;
+    transition: 0.5s;
+}
+header button{
+    margin-top: 25px;
+    width: 120px;
+    height: 34px;
+    background-color: #d08fbaa5;
+    top: 0;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-right: -165px;
+    transition: 0.7s;
+}
+header button:hover{
+    background-color: #cf77b1a5;
+    transform: scale(1.1);
+    transition: 0.7s;
+}
+
+header.abajo ul li a{
+			color: #000;
+            border-bottom: 2px solid #000000;
+}   
+header.abajo ul li a:hover{
+    color: #ff0800;
+    border-bottom: 2px solid #ff0800;
+    transition: 0.5s;
+}
+/*CUERPO*/
+.zona1{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(img/RosaPanePrincipal.jpeg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.zona1 button{
+    margin-top: 700px;
+    margin-left: 45rem;
+    width: 150px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #615757ae;
+    transition: 0.7s;
+
+}
+.zona1 button span{
+    font-size: 18px;
+    font-weight: 600;
+    color: #F5C973;
+}
+.zona1 button #arrow{
+    margin-top: -15px;
+    margin-left: 10px;
+    color: #b29b6c;
+}
+.zona1 button:hover{
+    background-color:  #383131da;
+    transform: scale(1.1);
+    transition: 0.7s;
+}
+/*BODY CONTENT*/
+.content{
+    width: 100%;
+    position: relative;
+    background-image: url(img/bodyRosa.jpeg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.content .productos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    padding-left: 150px;
+}
+.content .productos div {
+    margin-top: 25px;
+}
+.content .productos div section{
+    text-align: center;
+    background-color: #c9b5b5bc;
+    width: 194px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px black;
+    transform: scale(1.05);
+}
+.content img{
+    width: 194px;
+    height: 308px;
+    box-shadow: 0px 0px 10px 0px black;
+    transition: 0.7s;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.content .productos div img:hover{
+    transform: scale(1.05);
+    transition: 0.7s;
+}
+/*BOTON DE VER MAS PRODUCTOS*/
+.content .buttonMasProducts{
+    width: 12%;
+    margin-top: 300px;
+    margin-right: 50px;
+}
+.content .buttonMasProducts a{
+    background: none;
+    text-decoration: none;
+    border-radius: 8px
+}
+.tooltip-title {
+    color: red;
+  }
+.content .buttonMasProducts .bi:hover{
+    color: red;
+    font-size: 165px;
+    transition: 0.7s;
+}
+.content .buttonMasProducts .bi{
+    font-size: 155px;
+    color: #b29b6c;
+    transition: 0.7s;
+}
+/*NOSOTROS Y PRODUCCION*/
+.nosotrosP{
+    position: relative;
+    background-image: url(img/rosabody2.jpeg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    height: 100vh;
+
+}
+.nosotrosP .nosotros h1,
+.nosotrosP .produccion h1{
+    width: 50%;
+    margin-left: 150px;
+    border-bottom: 4px solid black;
+}
+.nosotrosP .nosotros, .produccion{
+    border-radius: 8px;
+}
+.nosotrosP .nosotros{
+    background-color: #d9d9d9c5;
+    width: 40%;
+    height: 82%;
+    margin-right: 120px;
+    margin-top: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+.nosotrosP .nosotros p{
+    margin-left: 10px;
+}
+.nosotrosP .nosotros div{
+    display: flex;
+    justify-content: space-around;
+}
+.nosotrosP .nosotros div p{
+    margin-left: 15px;
+}
+.nosotrosP .nosotros img{
+    width: 280px;
+    margin-left: 10px;
+}
+.nosotrosP .produccion{
+    margin-top: 17px;
+    background-color: #d9d9d9c5;
+    width: 40%;
+    height: 82%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+}
+.nosotrosP .produccion p{
+    margin-left: 15px;
+    margin-right: 5px;
+}
+

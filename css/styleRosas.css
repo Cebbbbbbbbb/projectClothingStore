@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*ENCABEZADO*/
+header{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    z-index: 10;
+    box-shadow: 0px 0px 10px 0px black;
+}
+header.abajo{
+    background: #ffffffd7;
+}
+
+header .logo{
+    margin-left: -195px;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+header ul li a{ 
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 15px;
+    color: #ffd500;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.7s;
+    text-decoration: none;
+    border-bottom: 2px solid #ffd500;
+    padding-bottom: 3px;
+    transition: 0.5s;
+}
+header ul li a:hover {
+    font-size: 18px;
+    color: #ff0800;
+    border-bottom: 2px solid #ff0800;
+    transition: 0.5s;
+}
+header button{
+    margin-top: 25px;
+    width: 120px;
+    height: 34px;
+    background-color: #d08fbaa5;
+    top: 0;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-right: -165px;
+    transition: 0.7s;
+}
+header button:hover{
+    background-color: #cf77b1a5;
+    transform: scale(1.1);
+    transition: 0.7s;
+}
+
+header.abajo ul li a{
+			color: #000;
+            border-bottom: 2px solid #000000;
+}   
+header.abajo ul li a:hover{
+    color: #ff0800;
+    border-bottom: 2px solid #ff0800;
+    transition: 0.5s;
+}
+/*BODY CONTENT*/
+.content{
+    
+    width: 100%;
+    position: relative;
+    background-image: url(img/bodyRosa.jpeg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.content .productos{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-left: 95px;  
+}
+.content .productos div {
+    margin-top: 25px;
+}
+.content .productos div section{
+    text-align: center;
+    background-color: #c9b5b5bc;
+    width: 194px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px black;
+    transform: scale(1.05);
+}
+.content img{
+    width: 194px;
+    height: 308px;
+    box-shadow: 0px 0px 10px 0px black;
+    transition: 0.7s;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.content .productos div img:hover{
+    transform: scale(1.05);
+    transition: 0.7s;
+}

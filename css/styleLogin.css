@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background-image: url(../img/bodyLogin.jpeg);
+    background-size: cover;
+}
+.login{
+    margin-top:16%;
+    background-color: rgba(255, 255, 255, 0.851);
+    width: 25%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    margin-left: 40%;
+    border-radius: 8px;
+}
+.login h1 {
+    padding: 10px 50px 50px 50px;
+}
+#user, #password{
+    width: 100%;
+    align-items: center;
+    height: 100%;
+}
+.login span{
+    margin-left: 3%;
+}
+.login .iconeUser, .iconePassword, .iconeEmail{
+    font-size: 24px;
+    height: 100%;
+    width: 100%;
+}
+.login section input{
+    text-align: center;
+    width: 80%;
+    height: 50px;
+    margin: 3% 4%;
+    border-radius: 5px;
+}
+.login p{
+    margin: 20px 0;
+    padding-bottom: 30px;
+}
+.login #formInitalSetion button{
+  margin-left: 33%;
+}
+.login #formRegister{
+    
+}
+
+/*Ventana modal*/
+.modal-content .modal-body{
+    background-color: rgba(97, 95, 95, 0.17);
+}
+.modal-content .modal-footer{
+    background-color: rgba(97, 95, 95, 0.17);
+
+}
+.buttonsRegister{
+    padding: 30px 0 15px 0;
+}
+.modal{
+    padding-top: 100px;
+    background-color: rgba(0, 0, 0, 0);
+}

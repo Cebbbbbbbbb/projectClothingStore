@@ -18,5 +18,6 @@ window.addEventListener("scroll", function(){
   const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 //Login
 function login(){
-  window.location.href="login/login.html";
+  const pagLogin='login/login.html';
+  window.open(pagLogin, '_blank');
 }

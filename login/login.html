@@ -14,14 +14,44 @@
         <div>
             <div class="login">
                 <h1>Iniciar Sesion</h1>
-                <form  class="row" id="formInitalSetion" novalidate>
-                    <section id="user" class="input-group">
-                        <span class="input-group-text"><i class="bi bi-person-circle iconeUser"></i></span><input type="text" class="form-control" placeholder="Usuario">
+                <form  class="row needs-validatio" id="formInitalSetion" novalidate>
+                    <section id="user" class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend3"><i class="bi bi-person-circle iconeUser"></i></span>
+                        <input type="text" class="form-control" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" placeholder="Usuario">
+                        <div id="validationServerUsernameFeedback" class="valid-feedback">
+                            hola
+                        </div>
+                          <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                            Looks good!
+                          </div>
                     </section>
-                    <section id="password" class="input-group">
-                        <span class="input-group-text"><i class="bi bi-shield-lock-fill iconePassword"></i></span><input type="password" class="form-control" placeholder="Contraseña">
-                    </section>           
-                    <button type="submit" class="btn btn-primary col-4">Iniciar Sesion</button>
+                    <section id="password"  class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend3"><i class="bi bi-shield-lock-fill iconePassword"></i></span>
+                        <input type="password" class="form-control"  aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" placeholder="Contraseña">
+                        <div id="validationServerUsernameFeedback" class="valid-feedback">
+                            hola
+                        </div>
+                          <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                            Looks good!
+                          </div>
+                    </section> 
+                    
+                    <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend3"><i class="bi bi-person-vcard-fill iconeUser"></i></i></span>
+                    <input type="text" class="form-control" id="validationServer01" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                    <div id="validationServerUsernameFeedback" class="valid-feedback">
+                        hola
+                    </div>
+                      <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                    
+                    </div>
+                    <div>
+        
+                        <button type="submit" class="btn btn-primary col-4">Iniciar Sesion</button>
+                    </div>
                 </form>
                 
                 <p>Si no tienes una cuenta: <a href=""  data-bs-toggle="modal" data-bs-target="#staticBackdrop">Registrate</a></p> 
@@ -35,13 +65,13 @@
                     <form class="row needs-validation"  id="formRegister" novalidate>
                         <div class="col-md-6">
                         <label for="validationServer01" class="form-label">Nombres</label>
-                        <div    class="input-group has-validation">
+                        <div class="input-group has-validation">
                             <span class="input-group-text" id="inputGroupPrepend3"><i class="bi bi-person-vcard-fill iconeUser"></i></i></span>
-                        <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+                        <input type="text" class="form-control" id="validationServer01" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
                         <div id="validationServerUsernameFeedback" class="valid-feedback">
                             hola
                         </div>
-                          <div class="valid-feedback">
+                          <div id="validationServerUsernameFeedback" class="invalid-feedback">
                             Looks good!
                           </div>
                         </div>
@@ -51,11 +81,11 @@
                             <label for="validationServer02" class="form-label">Apellidos</label>
                             <div class="input-group has-validation">
                                 <span class="input-group-text" id="inputGroupPrepend3"><i class="bi bi-person-vcard-fill iconeUser"></i></i></span>
-                                <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+                                <input type="text" class="form-control" id="validationServer02" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
                                 <div id="validationServerUsernameFeedback" class="valid-feedback">
                                     hola
                                 </div>
-                                <div class="valid-feedback message">
+                                <div id="validationServerUsernameFeedback" class="invalid-feedback">
                                     Looks good!
                                 </div>
                             </div>
@@ -64,12 +94,12 @@
                             <label for="validationServerUsername" class="form-label">Usuario</label>
                             <div class="input-group has-validation">
                             <span class="input-group-text" id="inputGroupPrepend3"><i class="bi bi-person-circle iconeUser"></i></span>
-                            <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                            <input type="text" class="form-control" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
                             <div id="validationServerUsernameFeedback" class="valid-feedback">
                                 hola
                             </div>
                             <div id="validationServerUsernameFeedback" class="invalid-feedback">
-                            Please choose a username.
+                                Please choose a username.
                             </div>
                             </div>
                             </div>  
@@ -77,12 +107,12 @@
                                 <label for="validationServerUsername" class="form-label">E-mail</label>
                                 <div class="input-group has-validation">
                                 <span class="input-group-text" id="inputGroupPrepend3"><i class="bi bi-envelope-at-fill iconeEmail"></i></span>
-                                <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                                <input type="text" class="form-control" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
                                 <div id="validationServerUsernameFeedback" class="valid-feedback">
                                     hola
                                 </div>
                                 <div id="validationServerUsernameFeedback" class="invalid-feedback">
-                                Please choose a username.
+                                    Please choose a username.
                                 </div>
                             </div>
                         </div>
@@ -90,7 +120,7 @@
                             <label for="validationServerUsername" class="form-label">Contraseña</label>
                             <div class="input-group has-validation">
                             <span class="input-group-text" id="inputGroupPrepend3"><i class="bi bi-shield-lock-fill iconePassword"></i></span>
-                            <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                            <input type="text" class="form-control " id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
                             <div id="validationServerUsernameFeedback" class="valid-feedback">
                                 hola
                             </div>
@@ -104,7 +134,7 @@
                             <label for="validationServerUsername" class="form-label">Repetir Contraseña</label>
                             <div class="input-group has-validation">
                             <span class="input-group-text" id="inputGroupPrepend3"><i class="bi bi-shield-lock-fill iconePassword"></i></span>
-                            <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                            <input type="text" class="form-control" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
                             <div id="validationServerUsernameFeedback" class="valid-feedback">
                                 hola
                             </div>

@@ -9,22 +9,21 @@ body{
     background-size: cover;
 }
 .login{
-    margin-top:16%;
+    margin-top:14%;
     background-color: rgba(255, 255, 255, 0.851);
     width: 25%;
     height: 100%;
     align-items: center;
     text-align: center;
-    margin-left: 40%;
+    margin-left: 38%;
     border-radius: 8px;
 }
 .login h1 {
     padding: 10px 50px 50px 50px;
 }
 #user, #password{
-    width: 100%;
-    align-items: center;
-    height: 100%;
+    padding-bottom: 4%;
+    width: 97%;
 }
 .login span{
     margin-left: 3%;
@@ -46,11 +45,9 @@ body{
     padding-bottom: 30px;
 }
 .login #formInitalSetion button{
-  margin-left: 33%;
+  
 }
-.login #formRegister{
-    
-}
+
 
 /*Ventana modal*/
 .modal-content .modal-body{

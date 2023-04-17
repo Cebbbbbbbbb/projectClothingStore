@@ -6,7 +6,7 @@
 
 /*ENCABEZADO*/
 header{
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -14,10 +14,8 @@ header{
     justify-content: space-around;
     transition: 0.7s;
     z-index: 10;
-    box-shadow: 0px 0px 10px 0px black;
-}
-header.abajo{
-    background: #ffffffd7;
+    box-shadow: 0px 0px 10px 0px rgb(104, 102, 102);
+    background-color: #00000092;
 }
 
 header .logo{
@@ -51,8 +49,6 @@ header ul li a{
 }
 header ul li a:hover {
     font-size: 18px;
-    color: #ff0800;
-    border-bottom: 2px solid #ff0800;
     transition: 0.5s;
 }
 header button{
@@ -82,12 +78,12 @@ header.abajo ul li a:hover{
     transition: 0.5s;
 }
 /*BODY CONTENT*/
-.content{
-    
+.content{  
     width: 100%;
     position: relative;
-    background-image: url(img/bodyRosa.jpeg);
+    background-image: url(../img/fondeProduct.jpg);
     background-size: cover;
+
     background-position: center center;
     display: flex;
     justify-content: space-around;

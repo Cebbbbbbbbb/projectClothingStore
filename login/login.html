@@ -14,44 +14,33 @@
         <div>
             <div class="login">
                 <h1>Iniciar Sesion</h1>
-                <form  class="row needs-validatio" id="formInitalSetion" novalidate>
-                    <section id="user" class="input-group has-validation">
+                <form  action="../administrator/adminProducts.html" class="row needs-validation" id="formInitalSetion" novalidate>
+
+                  <div id="user" class="input-group has-validation">
                         <span class="input-group-text" id="inputGroupPrepend3"><i class="bi bi-person-circle iconeUser"></i></span>
-                        <input type="text" class="form-control" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" placeholder="Usuario">
-                        <div id="validationServerUsernameFeedback" class="valid-feedback">
-                            hola
-                        </div>
-                          <div id="validationServerUsernameFeedback" class="invalid-feedback">
-                            Looks good!
-                          </div>
-                    </section>
-                    <section id="password"  class="input-group has-validation">
+                        <input type="text" class="form-control" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" placeholder="Usuario" required>
+                            <div id="validationServerUsernameFeedback" class="valid-feedback">
+                                Correcto
+                            </div>
+                              <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                                Ingrese usuario (6-12 caracteres)
+                              </div>
+                    </div>                   
+                    
+                    <div id="password" class="input-group has-validation">
                         <span class="input-group-text" id="inputGroupPrepend3"><i class="bi bi-shield-lock-fill iconePassword"></i></span>
-                        <input type="password" class="form-control"  aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" placeholder="Contraseña">
+                        <input type="password" class="form-control" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" placeholder="Contraseña" required>
                         <div id="validationServerUsernameFeedback" class="valid-feedback">
-                            hola
+                            Correcto
                         </div>
                           <div id="validationServerUsernameFeedback" class="invalid-feedback">
-                            Looks good!
+                            Ingrese la contraseña (8-15 caracteres)
                           </div>
-                    </section> 
-                    
-                    <div class="input-group has-validation">
-                        <span class="input-group-text" id="inputGroupPrepend3"><i class="bi bi-person-vcard-fill iconeUser"></i></i></span>
-                    <input type="text" class="form-control" id="validationServer01" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
-                    <div id="validationServerUsernameFeedback" class="valid-feedback">
-                        hola
                     </div>
-                      <div id="validationServerUsernameFeedback" class="invalid-feedback">
-                        Looks good!
-                      </div>
-                    </div>
-                    
-                    </div>
+
                     <div>
-        
-                        <button type="submit" class="btn btn-primary col-4">Iniciar Sesion</button>
-                    </div>
+                        <button type="submit" class="btn btn-primary col-4">Iniciar Sesion</button>               
+                    </div>      
                 </form>
                 
                 <p>Si no tienes una cuenta: <a href=""  data-bs-toggle="modal" data-bs-target="#staticBackdrop">Registrate</a></p> 
@@ -144,7 +133,7 @@
                             </div>
                         </div>               
                         <div class="buttonsRegister">
-                            <button class="btn btn-primary" type="submit">Registrar</button>
+                            <button class="btn btn-primary" type="submit" onclick="register()">Registrar</button>
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                         </div>
                     </form>
@@ -155,28 +144,8 @@
   </div>
 </div>            
 </div>
-    <script>
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-(() => {
-  'use strict'
-
-  // Fetch all the forms we want to apply custom Bootstrap validation styles to
-  const forms = document.querySelectorAll('.needs-validation')
-
-  // Loop over them and prevent submission
-  Array.from(forms).forEach(form => {
-    form.addEventListener('submit', event => {
-      if (!form.checkValidity()) {
-        event.preventDefault()
-        event.stopPropagation()
-      }
-
-      form.classList.add('was-validated')
-    }, false)
-  })
-})()
-    </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <script src="../js/validationForm.js"></script>
 </body>
 </html>

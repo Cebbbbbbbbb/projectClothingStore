@@ -33,3 +33,5 @@ function login(){
   const pagLogin='../login/login.html';
   window.open(pagLogin, '_blank');
 }
+
+

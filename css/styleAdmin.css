@@ -58,10 +58,11 @@ header button:hover{
     font-style: oblique;
     margin-top: 3%;
 }
-.container1 img{
+.container1 #mostrar{
+    text-align: center;
     float: left;
     width: 50%;
-    height: 100%;
+    height: 364px;
     margin: 3% 0 0 5%;
     border-radius: 5px;
     border: 2px solid rgb(186, 181, 181);
@@ -78,8 +79,9 @@ header button:hover{
 /*Contenedor 2*/
 .container2{
     float: right;
-    margin-right: 15%;
+    margin-right: 13%;
     margin-top: 3%;
+    width: 40%;
 }
 .container2 img{
     width: 100px;

@@ -14,8 +14,8 @@
   <header class="cabeza">
       <img class="logo" src="../img/logoAdmin.png" alt="">
       <div>
-        <button type="submit" onclick="irTienda()" target="_blank">Ir a la Tienda</button>
-        <button type="submit" onclick="verProductos()" target="_blank">Ver Productos</button>
+        <button type="submit" onclick="irTienda()">Ir a la Tienda</button>
+        <button type="submit" onclick="verProductos()">Ver Productos</button>
       </div>
     </header>
     
@@ -26,7 +26,7 @@
 
           <form action="" novalidate>
 
-              <img src="../img/rose1.jpg" class="card-img-top col-7" alt="...">
+              <img src="../img/rose1.jpg" id="mostrar" class="card-img-top col-7" alt="...">
               
                <div class="card-body col-5">
                   <div class="col-12">
@@ -48,7 +48,7 @@
           </form>
       </div>
   </div>
-  <div class="container2 col-4">
+  <div class="container2">
     <div class="table-scrollable">
 
       <table class="table table-striped table-hover">
@@ -56,9 +56,9 @@
               <tr>
                 <th scope="col">#</th>
                 <th scope="col">Producto</th>
-                <th scope="col">Nombre</th>
-                <th scope="col">Precio</th>
-                <th scope="col" colspan="2">Opciones</th>
+                <th class="col-4" scope="col">Nombre</th>
+                <th class="col-4" scope="col">Precio</th>
+                <th class="col-4" scope="col" colspan="2">Opciones</th>
               </tr>
             </thead>
             <tbody data-bs-spy="scroll" data-bs-root-margin="0px 0px 40%" data-bs-smooth-scroll="true"  >

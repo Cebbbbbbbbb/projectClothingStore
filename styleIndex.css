@@ -15,7 +15,8 @@ header{
     align-items: center;
     transition: 0.7s;
     z-index: 10;
-    box-shadow: 0px 0px 10px 0px black;
+    box-shadow: 0px 0px 20px 0px black;
+    border-bottom: 2px solid black;
 }
 header.abajo{
     background: #ffffffd7;
@@ -92,7 +93,6 @@ header.abajo ul li a:hover{
 }
 
 .zona1 button{
-    margin-top: 700px;
     margin-left: 45rem;
     width: 150px;
     height: 45px;
@@ -116,6 +116,19 @@ header.abajo ul li a:hover{
     transform: scale(1.1);
     transition: 0.7s;
 }
+.carousel{
+    padding-top: 7%;
+    padding-bottom: 3%;
+    text-align: center;
+    align-items: center;
+}
+.d-block{
+    width: 394px !important;
+    height: 508px !important;
+    margin: 1% 0 0 39%;
+    border: 4px solid #817d7db0;
+    border-radius: 8px;
+}
 /*BODY CONTENT*/
 .content{
     width: 100%;
@@ -132,31 +145,48 @@ header.abajo ul li a:hover{
     grid-template-columns: repeat(3,1fr);
     align-items: center;
     justify-content: center;
-    width: 90%;
+    width: 100%;
+    height: 100%;
     padding-left: 150px;
-}
-.content .productos div {
     margin-top: 25px;
+}
+.content .productos #compra {
+    text-align: center;
+    width: 300px;
+    height: 500px;
 }
 .content .productos div section{
     text-align: center;
     background-color: #c9b5b5bc;
     width: 194px;
-    border-radius: 5px;
+    margin-left: 10%;
+    border-radius: 5px; 
     box-shadow: 0px 0px 10px 0px black;
     transform: scale(1.05);
+    width: 80%;
+    height: 9.5%;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 4%;
+    
 }
+.content .productos div section p{
+    margin-bottom: -5px;
+}
+
 .content img{
     width: 194px;
     height: 308px;
     box-shadow: 0px 0px 10px 0px black;
-    transition: 0.7s;
+    transition: 0.9s;
     border-radius: 5px;
     cursor: pointer;
+   margin-bottom: 12%;
+   margin-top: 10%;
 }
 .content .productos div img:hover{
-    transform: scale(1.05);
-    transition: 0.7s;
+    transform: scale(1.15);
+    transition: 0.9s;
 }
 /*BOTON DE VER MAS PRODUCTOS*/
 .content .buttonMasProducts{

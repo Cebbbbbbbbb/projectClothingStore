@@ -14,7 +14,7 @@
         <div>
             <div class="login">
                 <h1>Iniciar Sesion</h1>
-                <form  action="../administrator/adminProducts.html" class="row needs-validation" id="formInitalSetion" novalidate>
+                <form  action="../administrator/adminProducts.html" class="row needs-validation1" id="formInitalSetion" novalidate>
 
                   <div id="user" class="input-group has-validation">
                         <span class="input-group-text" id="inputGroupPrepend3"><i class="bi bi-person-circle iconeUser"></i></span>
@@ -30,10 +30,10 @@
                     <div id="password" class="input-group has-validation">
                         <span class="input-group-text" id="inputGroupPrepend3"><i class="bi bi-shield-lock-fill iconePassword"></i></span>
                         <input type="password" class="form-control" id="validation2" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" placeholder="Contraseña" required>
-                        <div id="validationServerUsernameFeedback" class="valid-feedback">
+                        <div id="validationServerPasswordFeedback" class="valid-feedback">
                             Correcto
                         </div>
-                          <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                          <div id="invalidationServerPasswordFeedback" class="invalid-feedback">
                             Ingrese la contraseña (8-15 caracteres)
                           </div>
                     </div>
@@ -51,17 +51,17 @@
                 <div class="modal-content">       
                  <div class="modal-body">
                     <h1>Registrate</h1>   
-                    <form class="row needs-validation"  id="formRegister" novalidate>
+                    <form class="row needs-validation2"  id="formRegister" novalidate>
                         <div class="col-md-6">
                         <label for="validationServer01" class="form-label">Nombres</label>
                         <div class="input-group has-validation">
                             <span class="input-group-text" id="inputGroupPrepend3"><i class="bi bi-person-vcard-fill iconeUser"></i></i></span>
-                        <input type="text" class="form-control" id="validationServer01" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
-                        <div id="validationServerUsernameFeedback" class="valid-feedback">
-                            hola
+                        <input type="text" class="form-control" id="validationName" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                        <div id="validationServerNameFeedback" class="valid-feedback">
+                            correcto
                         </div>
-                          <div id="validationServerUsernameFeedback" class="invalid-feedback">
-                            Looks good!
+                          <div id="invalidationServerNameFeedback" class="invalid-feedback">
+                            Completa el campo
                           </div>
                         </div>
                         
@@ -70,12 +70,12 @@
                             <label for="validationServer02" class="form-label">Apellidos</label>
                             <div class="input-group has-validation">
                                 <span class="input-group-text" id="inputGroupPrepend3"><i class="bi bi-person-vcard-fill iconeUser"></i></i></span>
-                                <input type="text" class="form-control" id="validationServer02" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
-                                <div id="validationServerUsernameFeedback" class="valid-feedback">
-                                    hola
+                                <input type="text" class="form-control" id="validationLastname" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                                <div id="validationServerLastnameFeedback" class="valid-feedback">
+                                    correcto
                                 </div>
-                                <div id="validationServerUsernameFeedback" class="invalid-feedback">
-                                    Looks good!
+                                <div id="invalidationServerLastnameFeedback" class="invalid-feedback">
+                                    Completa el campo
                                 </div>
                             </div>
                         </div>
@@ -83,12 +83,12 @@
                             <label for="validationServerUsername" class="form-label">Usuario</label>
                             <div class="input-group has-validation">
                             <span class="input-group-text" id="inputGroupPrepend3"><i class="bi bi-person-circle iconeUser"></i></span>
-                            <input type="text" class="form-control" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
-                            <div id="validationServerUsernameFeedback" class="valid-feedback">
-                                hola
+                            <input type="text" class="form-control" id="validationUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                            <div id="validationServerUsername2Feedback" class="valid-feedback">
+                                correcto
                             </div>
-                            <div id="validationServerUsernameFeedback" class="invalid-feedback">
-                                Please choose a username.
+                            <div id="invalidationServerUsername2Feedback" class="invalid-feedback">
+                                Completa el campo
                             </div>
                             </div>
                             </div>  
@@ -96,12 +96,12 @@
                                 <label for="validationServerUsername" class="form-label">E-mail</label>
                                 <div class="input-group has-validation">
                                 <span class="input-group-text" id="inputGroupPrepend3"><i class="bi bi-envelope-at-fill iconeEmail"></i></span>
-                                <input type="text" class="form-control" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
-                                <div id="validationServerUsernameFeedback" class="valid-feedback">
-                                    hola
+                                <input type="text" class="form-control" id="validationEmail" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                                <div id="validationServerEmailFeedback" class="valid-feedback">
+                                    correcto
                                 </div>
-                                <div id="validationServerUsernameFeedback" class="invalid-feedback">
-                                    Please choose a username.
+                                <div id="invalidationServerEmailFeedback" class="invalid-feedback">
+                                    Ingrese Usuario (6-15 caracteres)
                                 </div>
                             </div>
                         </div>
@@ -109,13 +109,12 @@
                             <label for="validationServerUsername" class="form-label">Contraseña</label>
                             <div class="input-group has-validation">
                             <span class="input-group-text" id="inputGroupPrepend3"><i class="bi bi-shield-lock-fill iconePassword"></i></span>
-                            <input type="text" class="form-control " id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
-                            <div id="validationServerUsernameFeedback" class="valid-feedback">
-                                hola
+                            <input type="text" class="form-control " id="validationPassword" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                            <div id="validationServerPassword2Feedback" class="valid-feedback">
+                                correcto
                             </div>
-                            <div id="validationServerUsernameFeedback" class="invalid-feedback">
-
-                                Please choose a username.
+                            <div id="invalidationServerPassword2Feedback" class="invalid-feedback">
+                                Ingrese la contraseña (6-15 caracteres)
                             </div>
                             </div>
                         </div> 
@@ -123,12 +122,12 @@
                             <label for="validationServerUsername" class="form-label">Repetir Contraseña</label>
                             <div class="input-group has-validation">
                             <span class="input-group-text" id="inputGroupPrepend3"><i class="bi bi-shield-lock-fill iconePassword"></i></span>
-                            <input type="text" class="form-control" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
-                            <div id="validationServerUsernameFeedback" class="valid-feedback">
-                                hola
+                            <input type="text" class="form-control" id="validationRepetpassword" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                            <div id="validationServerRepetpasswordFeedback" class="valid-feedback">
+                                correcto
                             </div>
-                            <div id="validationServerUsernameFeedback" class="invalid-feedback">
-                                Please choose a username.
+                            <div id="invalidationServerRepetpasswordFeedback" class="invalid-feedback">
+                                Ingrese la contraseña (6-15 caracteres)
                             </div>
                             </div>
                         </div>               
